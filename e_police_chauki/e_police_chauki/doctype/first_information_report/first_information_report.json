@@ -1,0 +1,57 @@
+{
+  "doctype": "DocType",
+  "name": "First Information Report",
+  "module": "E Police Chowki",
+  "custom": 1,
+  "autoname": "format:FIR-.#####",
+  "fields": [
+    {
+      "fieldname": "complaint",
+      "fieldtype": "Link",
+      "label": "Complaint",
+      "options": "Complaint"
+    },
+    {
+      "fieldname": "sections",
+      "fieldtype": "Data",
+      "label": "IPC Sections"
+    },
+    {
+      "fieldname": "incident_date",
+      "fieldtype": "Date",
+      "label": "Incident Date"
+    },
+    {
+      "fieldname": "location",
+      "fieldtype": "Data",
+      "label": "Incident Location"
+    },
+    {
+      "fieldname": "details",
+      "fieldtype": "Text",
+      "label": "Details"
+    },
+    {
+      "fieldname": "investigating_officer",
+      "fieldtype": "Link",
+      "label": "Investigating Officer",
+      "options": "Police Officer"
+    },
+    {
+      "fieldname": "status",
+      "fieldtype": "Select",
+      "label": "Status",
+      "options": "Active\nCharge Sheet Filed\nClosed",
+      "default": "Active"
+    }
+  ],
+  "permissions": [
+    {
+      "role": "System Manager",
+      "read": 1,
+      "write": 1,
+      "create": 1,
+      "delete": 1
+    }
+  ]
+}

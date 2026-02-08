@@ -1,0 +1,77 @@
+{
+  "doctype": "DocType",
+  "name": "Investigation",
+  "module": "E Police Chowki",
+  "custom": 1,
+  "autoname": "format:INV-.#####",
+  "fields": [
+    {
+      "fieldname": "case_file",
+      "fieldtype": "Link",
+      "label": "Case File",
+      "options": "Case File",
+      "reqd": 1
+    },
+    {
+      "fieldname": "investigating_officer",
+      "fieldtype": "Link",
+      "label": "Investigating Officer",
+      "options": "Police Officer",
+      "reqd": 1
+    },
+    {
+      "fieldname": "start_date",
+      "fieldtype": "Date",
+      "label": "Start Date",
+      "default": "Today"
+    },
+    {
+      "fieldname": "end_date",
+      "fieldtype": "Date",
+      "label": "End Date"
+    },
+    {
+      "fieldname": "investigation_status",
+      "fieldtype": "Select",
+      "label": "Investigation Status",
+      "options": "Started\nIn Progress\nEvidence Collection\nInterrogation\nReport Submitted\nClosed",
+      "default": "Started"
+    },
+    {
+      "fieldname": "progress_notes",
+      "fieldtype": "Text",
+      "label": "Progress Notes"
+    },
+    {
+      "fieldname": "findings",
+      "fieldtype": "Text",
+      "label": "Key Findings"
+    },
+    {
+      "fieldname": "next_action",
+      "fieldtype": "Small Text",
+      "label": "Next Action"
+    },
+    {
+      "fieldname": "confidential",
+      "fieldtype": "Check",
+      "label": "Confidential",
+      "default": 0
+    }
+  ],
+  "permissions": [
+    {
+      "role": "System Manager",
+      "read": 1,
+      "write": 1,
+      "create": 1,
+      "delete": 1
+    },
+    {
+      "role": "Police Officer",
+      "read": 1,
+      "write": 1,
+      "create": 1
+    }
+  ]
+}

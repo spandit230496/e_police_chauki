@@ -1,0 +1,85 @@
+{
+ "actions": [],
+ "autoname": "FIR-.#####",
+ "creation": "2026-02-06 08:44:55.231693",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "status",
+  "complaint",
+  "sections",
+  "incident_date",
+  "location",
+  "investigating_officer",
+  "column_break_in4g",
+  "details"
+ ],
+ "fields": [
+  {
+   "fieldname": "complaint",
+   "fieldtype": "Link",
+   "label": "Complaint",
+   "options": "Complaint"
+  },
+  {
+   "fieldname": "sections",
+   "fieldtype": "Data",
+   "label": "IPC Sections"
+  },
+  {
+   "fieldname": "incident_date",
+   "fieldtype": "Date",
+   "label": "Incident Date"
+  },
+  {
+   "fieldname": "location",
+   "fieldtype": "Data",
+   "label": "Incident Location"
+  },
+  {
+   "fieldname": "column_break_in4g",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "details",
+   "fieldtype": "Text",
+   "label": "Details"
+  },
+  {
+   "fieldname": "investigating_officer",
+   "fieldtype": "Link",
+   "label": "Investigating Officer",
+   "options": "Police Officer"
+  },
+  {
+   "default": "Active",
+   "fieldname": "status",
+   "fieldtype": "Select",
+   "label": "Status",
+   "options": "Active\nCharge Sheet Filed\nClosed"
+  }
+ ],
+ "links": [],
+ "modified": "2026-02-06 21:13:39.877494",
+ "modified_by": "Administrator",
+ "module": "Complaint & FIR Management",
+ "name": "First Information Report",
+ "naming_rule": "Expression",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "read": 1,
+   "role": "System Manager",
+   "write": 1
+  }
+ ],
+ "row_format": "Dynamic",
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": [],
+ "track_changes": 1,
+ "track_seen": 1,
+ "track_views": 1
+}

@@ -1,0 +1,61 @@
+{
+  "doctype": "DocType",
+  "name": "Arrest Record",
+  "module": "E Police Chowki",
+  "custom": 1,
+  "autoname": "format:ARST-.#####",
+  "fields": [
+    {
+      "fieldname": "criminal",
+      "fieldtype": "Link",
+      "label": "Criminal",
+      "options": "Criminal Record",
+      "reqd": 1
+    },
+    {
+      "fieldname": "case_file",
+      "fieldtype": "Link",
+      "label": "Case File",
+      "options": "Case File"
+    },
+    {
+      "fieldname": "arrest_date",
+      "fieldtype": "Datetime",
+      "label": "Arrest Date",
+      "default": "Now"
+    },
+    {
+      "fieldname": "arrest_location",
+      "fieldtype": "Data",
+      "label": "Arrest Location"
+    },
+    {
+      "fieldname": "arresting_officer",
+      "fieldtype": "Link",
+      "label": "Arresting Officer",
+      "options": "Police Officer"
+    },
+    {
+      "fieldname": "custody_status",
+      "fieldtype": "Select",
+      "label": "Custody Status",
+      "options": "In Lockup\nReleased on Bail\nTransferred to Jail\nCourt Custody",
+      "default": "In Lockup"
+    }
+  ],
+  "permissions": [
+    {
+      "role": "System Manager",
+      "read": 1,
+      "write": 1,
+      "create": 1,
+      "delete": 1
+    },
+    {
+      "role": "Police Officer",
+      "read": 1,
+      "write": 1,
+      "create": 1
+    }
+  ]
+}

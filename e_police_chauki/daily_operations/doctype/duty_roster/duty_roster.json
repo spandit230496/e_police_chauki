@@ -1,0 +1,60 @@
+{
+ "actions": [],
+ "autoname": "DR-.#####",
+ "creation": "2026-02-06 10:16:58.506448",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "officer",
+  "duty_date",
+  "shift",
+  "area_assigned"
+ ],
+ "fields": [
+  {
+   "fieldname": "officer",
+   "fieldtype": "Link",
+   "label": "Officer",
+   "options": "Police Officer"
+  },
+  {
+   "default": "Today",
+   "fieldname": "duty_date",
+   "fieldtype": "Date",
+   "label": "Duty Date"
+  },
+  {
+   "fieldname": "shift",
+   "fieldtype": "Select",
+   "label": "Shift",
+   "options": "Morning\nEvening\nNight"
+  },
+  {
+   "fieldname": "area_assigned",
+   "fieldtype": "Data",
+   "label": "Area Assigned"
+  }
+ ],
+ "is_calendar_and_gantt": 1,
+ "links": [],
+ "modified": "2026-02-06 10:21:03.752471",
+ "modified_by": "Administrator",
+ "module": "Daily Operations",
+ "name": "Duty Roster",
+ "naming_rule": "Expression",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "read": 1,
+   "role": "System Manager",
+   "write": 1
+  }
+ ],
+ "quick_entry": 1,
+ "row_format": "Dynamic",
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

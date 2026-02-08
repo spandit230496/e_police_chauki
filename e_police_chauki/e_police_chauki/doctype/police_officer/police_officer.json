@@ -1,0 +1,58 @@
+{
+  "doctype": "DocType",
+  "name": "Police Officer",
+  "module": "E Police Chowki",
+  "custom": 1,
+  "autoname": "field:officer_id",
+  "fields": [
+    {
+      "fieldname": "officer_id",
+      "fieldtype": "Data",
+      "label": "Officer ID",
+      "unique": 1
+    },
+    {
+      "fieldname": "officer_name",
+      "fieldtype": "Data",
+      "label": "Officer Name",
+      "reqd": 1
+    },
+    {
+      "fieldname": "rank",
+      "fieldtype": "Select",
+      "label": "Rank",
+      "options": "Constable\nHead Constable\nSub Inspector\nInspector\nSHO"
+    },
+    {
+      "fieldname": "mobile",
+      "fieldtype": "Data",
+      "label": "Mobile Number"
+    },
+    {
+      "fieldname": "email",
+      "fieldtype": "Data",
+      "label": "Email"
+    },
+    {
+      "fieldname": "station",
+      "fieldtype": "Link",
+      "label": "Police Station",
+      "options": "Police Station"
+    },
+    {
+      "fieldname": "shift",
+      "fieldtype": "Select",
+      "label": "Shift",
+      "options": "Morning\nEvening\nNight"
+    }
+  ],
+  "permissions": [
+    {
+      "role": "System Manager",
+      "read": 1,
+      "write": 1,
+      "create": 1,
+      "delete": 1
+    }
+  ]
+}

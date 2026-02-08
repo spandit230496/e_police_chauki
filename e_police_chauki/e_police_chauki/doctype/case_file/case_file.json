@@ -1,0 +1,71 @@
+{
+  "doctype": "DocType",
+  "name": "Case File",
+  "module": "Complaint & FIR Management",
+  "custom": 1,
+  "autoname": "format:CASE-.#####",
+  "fields": [
+    {
+      "fieldname": "fir",
+      "fieldtype": "Link",
+      "label": "FIR",
+      "options": "First Information Report",
+      "reqd": 1
+    },
+    {
+      "fieldname": "case_type",
+      "fieldtype": "Select",
+      "label": "Case Type",
+      "options": "Criminal\nCivil\nCyber Crime\nDomestic Violence\nFraud\nOther",
+      "reqd": 1
+    },
+    {
+      "fieldname": "court_name",
+      "fieldtype": "Data",
+      "label": "Court Name"
+    },
+    {
+      "fieldname": "start_date",
+      "fieldtype": "Date",
+      "label": "Case Start Date",
+      "default": "Today"
+    },
+    {
+      "fieldname": "current_status",
+      "fieldtype": "Select",
+      "label": "Current Status",
+      "options": "Under Investigation\nIn Court\nHearing Scheduled\nJudgement Pending\nClosed",
+      "default": "Under Investigation"
+    },
+    {
+      "fieldname": "next_hearing_date",
+      "fieldtype": "Date",
+      "label": "Next Hearing Date"
+    },
+    {
+      "fieldname": "final_verdict",
+      "fieldtype": "Small Text",
+      "label": "Final Verdict"
+    },
+    {
+      "fieldname": "remarks",
+      "fieldtype": "Text",
+      "label": "Remarks"
+    }
+  ],
+  "permissions": [
+    {
+      "role": "System Manager",
+      "read": 1,
+      "write": 1,
+      "create": 1,
+      "delete": 1
+    },
+    {
+      "role": "Police Officer",
+      "read": 1,
+      "write": 1,
+      "create": 1
+    }
+  ]
+}

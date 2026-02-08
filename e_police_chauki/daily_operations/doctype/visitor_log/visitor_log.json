@@ -1,0 +1,45 @@
+{
+  "doctype": "DocType",
+  "name": "Visitor Log",
+  "module": "Daily Operations",
+  "custom": 1,
+  "autoname": "format:VIS-.#####",
+  "fields": [
+    {
+      "fieldname": "visitor_name",
+      "fieldtype": "Data",
+      "label": "Visitor Name",
+      "reqd": 1
+    },
+    {
+      "fieldname": "mobile",
+      "fieldtype": "Data",
+      "label": "Mobile"
+    },
+    {
+      "fieldname": "purpose",
+      "fieldtype": "Small Text",
+      "label": "Purpose"
+    },
+    {
+      "fieldname": "time_in",
+      "fieldtype": "Datetime",
+      "label": "Time In",
+      "default": "Now"
+    },
+    {
+      "fieldname": "time_out",
+      "fieldtype": "Datetime",
+      "label": "Time Out"
+    }
+  ],
+  "permissions": [
+    {
+      "role": "System Manager",
+      "read": 1,
+      "write": 1,
+      "create": 1,
+      "delete": 1
+    }
+  ]
+}

@@ -1,0 +1,46 @@
+{
+  "doctype": "DocType",
+  "name": "Daily Diary",
+  "module": "Daily Operations",
+  "custom": 1,
+  "autoname": "format:DD-.#####",
+  "fields": [
+    {
+      "fieldname": "officer",
+      "fieldtype": "Link",
+      "label": "Officer",
+      "options": "Police Officer"
+    },
+    {
+      "fieldname": "entry_date",
+      "fieldtype": "Date",
+      "label": "Entry Date",
+      "default": "Today"
+    },
+    {
+      "fieldname": "activity",
+      "fieldtype": "Text",
+      "label": "Activity"
+    },
+    {
+      "fieldname": "remarks",
+      "fieldtype": "Small Text",
+      "label": "Remarks"
+    }
+  ],
+  "permissions": [
+    {
+      "role": "System Manager",
+      "read": 1,
+      "write": 1,
+      "create": 1,
+      "delete": 1
+    },
+    {
+      "role": "Police Officer",
+      "read": 1,
+      "write": 1,
+      "create": 1
+    }
+  ]
+}

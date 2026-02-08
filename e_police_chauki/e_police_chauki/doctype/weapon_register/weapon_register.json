@@ -1,0 +1,78 @@
+{
+  "doctype": "DocType",
+  "name": "Weapon Register",
+  "module": "E Police Chowki",
+  "custom": 1,
+  "istable": 0,
+  "is_submittable": 0,
+  "autoname": "format:WPN-.#####",
+  "fields": [
+    {
+      "fieldname": "weapon_no",
+      "fieldtype": "Data",
+      "label": "Weapon Number",
+      "reqd": 1,
+      "unique": 1
+    },
+    {
+      "fieldname": "weapon_type",
+      "fieldtype": "Select",
+      "label": "Weapon Type",
+      "options": "Pistol\nRifle\nRevolver\nShotgun\nOther",
+      "reqd": 1
+    },
+    {
+      "fieldname": "model",
+      "fieldtype": "Data",
+      "label": "Model"
+    },
+    {
+      "fieldname": "serial_no",
+      "fieldtype": "Data",
+      "label": "Serial Number"
+    },
+    {
+      "fieldname": "issued_to",
+      "fieldtype": "Link",
+      "label": "Issued To",
+      "options": "Police Officer"
+    },
+    {
+      "fieldname": "issue_date",
+      "fieldtype": "Date",
+      "label": "Issue Date"
+    },
+    {
+      "fieldname": "return_date",
+      "fieldtype": "Date",
+      "label": "Return Date"
+    },
+    {
+      "fieldname": "status",
+      "fieldtype": "Select",
+      "label": "Status",
+      "options": "Available\nIssued\nUnder Maintenance\nRetired",
+      "default": "Available"
+    },
+    {
+      "fieldname": "remarks",
+      "fieldtype": "Small Text",
+      "label": "Remarks"
+    }
+  ],
+  "permissions": [
+    {
+      "role": "System Manager",
+      "read": 1,
+      "write": 1,
+      "create": 1,
+      "delete": 1
+    },
+    {
+      "role": "Police Officer",
+      "read": 1,
+      "write": 1,
+      "create": 1
+    }
+  ]
+}

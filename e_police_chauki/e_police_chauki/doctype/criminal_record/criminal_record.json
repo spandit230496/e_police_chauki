@@ -1,0 +1,52 @@
+{
+  "doctype": "DocType",
+  "name": "Criminal Record",
+  "module": "E Police Chowki",
+  "custom": 1,
+  "autoname": "format:CRM-.#####",
+  "fields": [
+    {
+      "fieldname": "full_name",
+      "fieldtype": "Data",
+      "label": "Full Name",
+      "reqd": 1
+    },
+    {
+      "fieldname": "photo",
+      "fieldtype": "Attach Image",
+      "label": "Photo"
+    },
+    {
+      "fieldname": "aadhar_no",
+      "fieldtype": "Data",
+      "label": "Aadhar Number",
+      "unique": 1
+    },
+    {
+      "fieldname": "address",
+      "fieldtype": "Small Text",
+      "label": "Address"
+    },
+    {
+      "fieldname": "known_cases",
+      "fieldtype": "Int",
+      "label": "Known Cases",
+      "default": 0
+    },
+    {
+      "fieldname": "status",
+      "fieldtype": "Select",
+      "label": "Status",
+      "options": "Active\nWanted\nReleased\nDeceased"
+    }
+  ],
+  "permissions": [
+    {
+      "role": "System Manager",
+      "read": 1,
+      "write": 1,
+      "create": 1,
+      "delete": 1
+    }
+  ]
+}

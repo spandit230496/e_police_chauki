@@ -1,0 +1,64 @@
+{
+  "doctype": "DocType",
+  "name": "Complaint",
+  "module": "E Police Chowki",
+  "custom": 1,
+  "autoname": "format:CMP-.#####",
+  "fields": [
+    {
+      "fieldname": "complainant_name",
+      "fieldtype": "Data",
+      "label": "Complainant Name",
+      "reqd": 1
+    },
+    {
+      "fieldname": "mobile",
+      "fieldtype": "Data",
+      "label": "Mobile"
+    },
+    {
+      "fieldname": "address",
+      "fieldtype": "Small Text",
+      "label": "Address"
+    },
+    {
+      "fieldname": "complaint_type",
+      "fieldtype": "Select",
+      "label": "Complaint Type",
+      "options": "Theft\nHarassment\nAccident\nFraud\nOther"
+    },
+    {
+      "fieldname": "description",
+      "fieldtype": "Text",
+      "label": "Description"
+    },
+    {
+      "fieldname": "complaint_date",
+      "fieldtype": "Datetime",
+      "label": "Complaint Date",
+      "default": "Now"
+    },
+    {
+      "fieldname": "status",
+      "fieldtype": "Select",
+      "label": "Status",
+      "options": "Open\nUnder Review\nClosed",
+      "default": "Open"
+    },
+    {
+      "fieldname": "assigned_officer",
+      "fieldtype": "Link",
+      "label": "Assigned Officer",
+      "options": "Police Officer"
+    }
+  ],
+  "permissions": [
+    {
+      "role": "System Manager",
+      "read": 1,
+      "write": 1,
+      "create": 1,
+      "delete": 1
+    }
+  ]
+}

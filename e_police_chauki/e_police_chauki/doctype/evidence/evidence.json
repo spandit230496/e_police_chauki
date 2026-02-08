@@ -1,0 +1,58 @@
+{
+  "doctype": "DocType",
+  "name": "Evidence",
+  "module": "E Police Chowki",
+  "custom": 1,
+  "autoname": "format:EVD-.#####",
+  "fields": [
+    {
+      "fieldname": "case_file",
+      "fieldtype": "Link",
+      "label": "Case File",
+      "options": "Case File",
+      "reqd": 1
+    },
+    {
+      "fieldname": "evidence_type",
+      "fieldtype": "Select",
+      "label": "Evidence Type",
+      "options": "Physical\nDigital\nDocument\nAudio\nVideo\nOther"
+    },
+    {
+      "fieldname": "description",
+      "fieldtype": "Text",
+      "label": "Description"
+    },
+    {
+      "fieldname": "attachment",
+      "fieldtype": "Attach",
+      "label": "File Attachment"
+    },
+    {
+      "fieldname": "submitted_by",
+      "fieldtype": "Link",
+      "label": "Submitted By",
+      "options": "Police Officer"
+    },
+    {
+      "fieldname": "storage_location",
+      "fieldtype": "Data",
+      "label": "Storage Location"
+    }
+  ],
+  "permissions": [
+    {
+      "role": "System Manager",
+      "read": 1,
+      "write": 1,
+      "create": 1,
+      "delete": 1
+    },
+    {
+      "role": "Police Officer",
+      "read": 1,
+      "write": 1,
+      "create": 1
+    }
+  ]
+}
