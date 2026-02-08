@@ -1,0 +1,157 @@
+{
+ "charts": [],
+ "content": "[{\"id\":\"XUh1h5KI6e\",\"type\":\"header\",\"data\":{\"text\":\"<span class=\\\"h4\\\">E Police Chowki</span>\",\"col\":12}},{\"id\":\"yv1yERMkI8\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Police Officer\",\"col\":3}},{\"id\":\"jjql1pYjh6\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Police Station\",\"col\":3}},{\"id\":\"q_8fwR3VTF\",\"type\":\"spacer\",\"data\":{\"col\":12}},{\"id\":\"clopRbHkaY\",\"type\":\"header\",\"data\":{\"text\":\"<span class=\\\"h4\\\">Complaint &amp; FIR Management<b></b></span>\",\"col\":12}},{\"id\":\"UC9tJcelvt\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Complaint\",\"col\":3}},{\"id\":\"55cjqch8v1\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Case File\",\"col\":3}},{\"id\":\"xHJmNWfGeU\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"FIR\",\"col\":3}},{\"id\":\"zMtqrw9966\",\"type\":\"spacer\",\"data\":{\"col\":12}},{\"id\":\"RZz2w3mgZB\",\"type\":\"header\",\"data\":{\"text\":\"<span class=\\\"h3\\\"><b>Criminal &amp; Records Management</b></span>\",\"col\":12}},{\"id\":\"_hN6kKn4R_\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Criminal Record\",\"col\":3}},{\"id\":\"yO32Synopf\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Arrest Record\",\"col\":3}},{\"id\":\"3x7vZ-nmN3\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Lockup Register\",\"col\":3}},{\"id\":\"CB2BiYSmxv\",\"type\":\"spacer\",\"data\":{\"col\":12}},{\"id\":\"u2N_Rrk2CY\",\"type\":\"header\",\"data\":{\"text\":\"<span class=\\\"h4\\\"><b>Investigation Managment</b></span>\",\"col\":12}},{\"id\":\"mTocp7viut\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Investigation\",\"col\":3}},{\"id\":\"vIl7TA3cTi\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Witness\",\"col\":3}},{\"id\":\"lbYjbBUD6A\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Evidence\",\"col\":3}},{\"id\":\"bnYNjLGLLD\",\"type\":\"spacer\",\"data\":{\"col\":12}},{\"id\":\"Q5BBjQebkj\",\"type\":\"header\",\"data\":{\"text\":\"<span class=\\\"h4\\\">Daily Operations</span>\",\"col\":12}},{\"id\":\"gsQ63VfScm\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Duty Roster\",\"col\":3}},{\"id\":\"KE5CJMmXm1\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Daily Diary\",\"col\":3}},{\"id\":\"QzVRU23oSn\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Visitor Log\",\"col\":3}},{\"id\":\"V-TVT5FsRm\",\"type\":\"spacer\",\"data\":{\"col\":12}},{\"id\":\"yy6dkEcJ34\",\"type\":\"header\",\"data\":{\"text\":\"<span class=\\\"h4\\\"><b>Assets &amp; Resource Management</b></span>\",\"col\":12}},{\"id\":\"Eaunb7Hnp_\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Weapon Register\",\"col\":3}},{\"id\":\"pB7-K36Qeo\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Vehicle Register\",\"col\":3}}]",
+ "creation": "2026-02-06 08:48:14.732567",
+ "custom_blocks": [],
+ "docstatus": 0,
+ "doctype": "Workspace",
+ "for_user": "",
+ "hide_custom": 0,
+ "icon": "color-rank",
+ "idx": 0,
+ "indicator_color": "green",
+ "is_hidden": 0,
+ "label": "E Police Chowki",
+ "links": [],
+ "modified": "2026-02-08 13:41:42.110767",
+ "modified_by": "Administrator",
+ "module": "E Police Chauki",
+ "name": "E Police Chowki",
+ "number_cards": [],
+ "owner": "Administrator",
+ "parent_page": "",
+ "public": 1,
+ "quick_lists": [],
+ "roles": [],
+ "sequence_id": 28.0,
+ "shortcuts": [
+  {
+   "color": "Grey",
+   "doc_view": "List",
+   "label": "Police Officer",
+   "link_to": "Police Officer",
+   "stats_filter": "[]",
+   "type": "DocType"
+  },
+  {
+   "color": "Grey",
+   "doc_view": "List",
+   "label": "Complaint",
+   "link_to": "Complaint",
+   "stats_filter": "[]",
+   "type": "DocType"
+  },
+  {
+   "color": "Grey",
+   "doc_view": "List",
+   "label": "Investigation",
+   "link_to": "Investigation",
+   "stats_filter": "[]",
+   "type": "DocType"
+  },
+  {
+   "color": "Grey",
+   "doc_view": "List",
+   "label": "Case File",
+   "link_to": "Case File",
+   "type": "DocType"
+  },
+  {
+   "color": "Grey",
+   "doc_view": "List",
+   "label": "Arrest Record",
+   "link_to": "Arrest Record",
+   "stats_filter": "[]",
+   "type": "DocType"
+  },
+  {
+   "color": "Grey",
+   "doc_view": "List",
+   "label": "Duty Roster",
+   "link_to": "Duty Roster",
+   "stats_filter": "[]",
+   "type": "DocType"
+  },
+  {
+   "color": "Grey",
+   "doc_view": "List",
+   "label": "Daily Diary",
+   "link_to": "Daily Diary",
+   "stats_filter": "[]",
+   "type": "DocType"
+  },
+  {
+   "color": "Grey",
+   "doc_view": "List",
+   "label": "Police Station",
+   "link_to": "Police Station",
+   "stats_filter": "[]",
+   "type": "DocType"
+  },
+  {
+   "color": "Grey",
+   "doc_view": "List",
+   "label": "FIR",
+   "link_to": "First Information Report",
+   "stats_filter": "[]",
+   "type": "DocType"
+  },
+  {
+   "color": "Grey",
+   "doc_view": "List",
+   "label": "Witness",
+   "link_to": "Witness",
+   "stats_filter": "[]",
+   "type": "DocType"
+  },
+  {
+   "color": "Grey",
+   "doc_view": "List",
+   "label": "Weapon Register",
+   "link_to": "Weapon Register",
+   "stats_filter": "[]",
+   "type": "DocType"
+  },
+  {
+   "color": "Grey",
+   "doc_view": "List",
+   "label": "Criminal Record",
+   "link_to": "Criminal Record",
+   "stats_filter": "[]",
+   "type": "DocType"
+  },
+  {
+   "color": "Grey",
+   "doc_view": "List",
+   "label": "Visitor Log",
+   "link_to": "Visitor Log",
+   "stats_filter": "[]",
+   "type": "DocType"
+  },
+  {
+   "color": "Grey",
+   "doc_view": "List",
+   "label": "Evidence",
+   "link_to": "Evidence",
+   "stats_filter": "[]",
+   "type": "DocType"
+  },
+  {
+   "color": "Grey",
+   "doc_view": "List",
+   "label": "Vehicle Register",
+   "link_to": "Vehicle Register",
+   "stats_filter": "[]",
+   "type": "DocType"
+  },
+  {
+   "color": "Grey",
+   "doc_view": "List",
+   "label": "Lockup Register",
+   "link_to": "Lockup Register",
+   "stats_filter": "[]",
+   "type": "DocType"
+  }
+ ],
+ "title": "E Police Chowki"
+}
